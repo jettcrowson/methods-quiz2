@@ -29,3 +29,7 @@ def max_maybe(num1, num2)
         return num1 > num2 ? num1 : num2
     end
 end
+
+def squirrels_play?(temp, summer)
+    return temp >= 60 && temp <= (summer ? 100 : 90) ? true : false
+end
