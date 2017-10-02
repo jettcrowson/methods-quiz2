@@ -23,7 +23,7 @@ describe 'methods_quiz2' do
 			without_doubles(6,6,true).must_equal(7)
 		end
 		it 'Gives the sum of 12' do
-			without_doubles(6,6,false).must_equal(7)
+			without_doubles(6,6,false).must_equal(12)
 		end
 	end
 end
