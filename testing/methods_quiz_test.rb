@@ -28,4 +28,12 @@ t.create("methods_quiz2")
             t.test("squirrels should not play", [59, true], false),
             t.test("squirrels should not play", [59, false], false)
         ])
+    t.new_test("red_ticket")
+        t.function_test([
+            t.test("all 2, so 10", [2,2,2], 10),
+            t.test("all 4, so 5", [4,4,4], 5),
+            t.test("b and c are different from a, so 1", [1,2,3], 1),
+            t.test("either b or c is the same as a, so 0", [2,2,3], 0)
+        ])
+
 t.write(File.basename(__FILE__))

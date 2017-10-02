@@ -60,4 +60,18 @@ describe 'methods_quiz2' do
 			squirrels_play?(59,false).must_equal(false)
 		end
 	end
+	describe 'red_ticket' do
+		it 'all 2, so 10' do
+			red_ticket(2,2,2).must_equal(10)
+		end
+		it 'all 4, so 5' do
+			red_ticket(4,4,4).must_equal(5)
+		end
+		it 'b and c are different from a, so 1' do
+			red_ticket(1,2,3).must_equal(1)
+		end
+		it 'either b or c is the same as a, so 0' do
+			red_ticket(2,2,3).must_equal(0)
+		end
+	end
 end
