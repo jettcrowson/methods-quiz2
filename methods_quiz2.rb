@@ -33,3 +33,13 @@ end
 def squirrels_play?(temp, summer)
     return temp >= 60 && temp <= (summer ? 100 : 90) ? true : false
 end
+
+def red_ticket(a,b,c)
+    if a == b && a == c
+        return a == 2 ? 10 : 5
+    elsif a != b and a != c
+        return 1
+    else
+        return 0
+    end
+end
