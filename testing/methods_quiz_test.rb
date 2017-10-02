@@ -16,7 +16,7 @@ t.create("methods_quiz2")
         t.function_test([
             t.test("5 is larger", [5,2], 5),
             t.test("5 is larger", [-2, 5], 5),
-            t.test("3 is smaller, but has a bigger remainder when divided by 5", [3, 15], 3),
+            t.test("3 is smaller, but has the same remainder when divided by 5", [3, 18], 3),
             t.test("0 becasue the values are the same", [5,5], 0)
         ])
 t.write(File.basename(__FILE__))

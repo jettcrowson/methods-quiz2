@@ -33,8 +33,8 @@ describe 'methods_quiz2' do
 		it '5 is larger' do
 			max_maybe(-2,5).must_equal(5)
 		end
-		it '3 is smaller, but has a bigger remainder when divided by 5' do
-			max_maybe(3,15).must_equal(3)
+		it '3 is smaller, but has the same remainder when divided by 5' do
+			max_maybe(3,18).must_equal(3)
 		end
 		it '0 becasue the values are the same' do
 			max_maybe(5,5).must_equal(0)
