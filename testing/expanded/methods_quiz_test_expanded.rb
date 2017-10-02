@@ -40,4 +40,24 @@ describe 'methods_quiz2' do
 			max_maybe(5,5).must_equal(0)
 		end
 	end
+	describe 'squirrels_play?' do
+		it 'squirrels should play' do
+			squirrels_play?(75,true).must_equal(true)
+		end
+		it 'squirrels should play' do
+			squirrels_play?(75,false).must_equal(true)
+		end
+		it 'squirrels should not play' do
+			squirrels_play?(100,false).must_equal(false)
+		end
+		it 'squirrels should play' do
+			squirrels_play?(100,true).must_equal(true)
+		end
+		it 'squirrels should not play' do
+			squirrels_play?(59,true).must_equal(false)
+		end
+		it 'squirrels should not play' do
+			squirrels_play?(59,false).must_equal(false)
+		end
+	end
 end

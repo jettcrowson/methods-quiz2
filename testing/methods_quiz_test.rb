@@ -19,4 +19,13 @@ t.create("methods_quiz2")
             t.test("3 is smaller, but has the same remainder when divided by 5", [3, 18], 3),
             t.test("0 becasue the values are the same", [5,5], 0)
         ])
+    t.new_test("squirrels_play?")
+        t.function_test([
+            t.test("squirrels should play", [75, true], true),
+            t.test("squirrels should play", [75, false], true),
+            t.test("squirrels should not play", [100, false], false),
+            t.test("squirrels should play", [100, true], true),
+            t.test("squirrels should not play", [59, true], false),
+            t.test("squirrels should not play", [59, false], false)
+        ])
 t.write(File.basename(__FILE__))
